@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A lot of forms page</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<body>
+<div class="content1">
+    <div class="nav justify-content-center ">
+        <header class=" nav justify-content-center">
+            <nav class="nav justify-content-center">
+                <ul class="nav nav-tabs justify-content-center ">
+                    <li class="nav-item">
+                        <button class="nav-link" id="home" onclick="goto('home')">Home</button>
+                    </li>
+                    <li class="nav-item">
+                        <button class="nav-link " id="pages" onclick="goto('pages')">Pages</button>
+                    </li>
+                    <li class="nav-item">
+                        <button class="nav-link" id="about_us" onclick="goto('about_us')">About us</button>
+                    </li>
+                    <li class="nav-item">
+                        <button class="nav-link"  id="privacy_politics" onclick="goto('privacy_politics')">Privacy politics</button>
+                    </li>
+
+                </ul>
+
+
+            </nav>
+        </header>
+
+    </div>
+    <div class="container">
+        <div class="main-block text-sm-center">
+            <h3 class="main" id="main_text">Добропожаловать на сайт где вы можете подобрать себе различные товары и найти чем заняться в свободное время!
+            </h3>
+        </div>
+        <div>
+
+
+            <div id="content" class="content container">
+                <form method="get"  class="cat">
+                    <a href="category.html"><button class="frame" onclick="cat('pc')" value="pc">Компьютеры</button></a>
+                    <a href="category.html"><button class="frame" onclick="cat('clothes')" value="cl">Одежда</button></a>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+</div>
+
+
+<script src="main.js">
+
+
+</script>
+</body>
+
+</html>
+

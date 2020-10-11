@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A lot of forms page</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    </head>
+
+<body>
+    <div class="content1">
+        <div class="nav justify-content-center ">
+            <header class=" nav justify-content-center">
+                <nav class="nav justify-content-center">
+                    <ul class="nav nav-tabs justify-content-center ">
+                        <li class="nav-item">
+                            <button class="nav-link" id="home" onclick="goto('home')">Home</button>
+                        </li>
+                        <li class="nav-item">
+                            <button class="nav-link " id="pages" onclick="goto('pages')">Pages</button>
+                        </li>
+                        <li class="nav-item">
+                            <button class="nav-link" id="about_us" onclick="goto('about_us')">About us</button>
+                        </li>
+                        <li class="nav-item">
+                            <button class="nav-link"  id="privacy_politics" onclick="goto('privacy_politics')">Privacy politics</button>
+                        </li>
+
+                    </ul>
+
+
+                </nav>
+            </header>
+
+        </div>
+        <div class="container">
+            <div class="main-block text-sm-center">
+                <h3 class="main" id="main_text">Добропожаловать на сайт где вы можете подобрать себе различные товары и найти чем заняться в свободное время!
+                </h3>
+            </div>
+            <div>
+
+
+            <div id="content" class="content container">
+                <p class="first_log">Перед тем как приступить к делу нам нужно узнать ваши предпочитание</p>
+                <p class="first_log">Это делается для того что бы улучшить качество сайта</p>
+               <div class="form container">
+
+
+                    <form  name="firstMeet" action="pages.html">
+                        <div class="form-group">
+                            <label for="InputName">Ваше полное имя </label>
+                            <input type="text" class="form-control" id="InputName" name="username" autocomplete="off">
+                        </div>
+                        <p>Укажите ваш пол</p>
+                        <div class="form-check-inline">
+                            <input class="form-check-input" type="radio" name="gender" id="male" value='man'>
+                            <label class="form-check-label" for="male">
+                                Мужской
+                            </label>
+                        </div>
+                        <div class="form-check-inline">
+                            <input class="form-check-input" type="radio" name="gender" id="female" value="woman">
+                            <label class="form-check-label" for="female">
+                                Женский
+                            </label>
+                        </div>
+                        <p>Напишите пару предложений о себе и то что вы хотели бы видеть в данном сайте</p>
+                        <div class="form-group form-text">
+                            <textarea class="form-text" name="AbUser"></textarea>
+
+                        </div>
+                        <div class="form-group form-check">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                        <label class="form-check-label" for="exampleCheck1">Согласен с политикой конфединциальности </label>
+                        </div>
+                        <p class="alert-danger" id="alertp"></p>
+                        <button type="submit" onclick="return getUserData()" class="btn btn-primary">Submit</button>
+                    </form>
+
+            </div>
+            </div>
+            </div>
+        </div>
+
+
+    </div>
+
+
+    <script src="main.js">
+
+
+    </script>
+    </body>
+
+</html>
